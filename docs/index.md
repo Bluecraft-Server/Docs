@@ -4,7 +4,7 @@
 
 您可以查看下面的链接：
 
- - [MEK 教程](/MEK/README.md/)
+ - [MEK 教程](./MEK/README)
 
 ---
 
