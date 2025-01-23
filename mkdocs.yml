@@ -20,6 +20,15 @@ theme:
   features:
     - navigation.expand 
     - tabs 
+
+extra:
+  # 自定义页脚
+  footer: |
+    <div style="text-align: center;">
+      <p>由 <a href="https://bluecraft.top/">Bluecraft</a> 提供支持。</p>
+      <p><a href="https://qm.qq.com/q/BLdfQdDAl4">加入 QQ 群组</a></p>
+    </div>
+
 markdown_extensions: 
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
   - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
