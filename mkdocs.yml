@@ -24,7 +24,8 @@ theme:
 extra:
   generator: false # 去除 Made with Material for MkDocs
   social: # 自定义页脚 https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/
-    - link: https://qm.qq.com/q/BLdfQdDAl4
+    - icon: material/link
+      link: https://qm.qq.com/q/BLdfQdDAl4
       name: 加入 QQ 群组
 
 # 版权声明
