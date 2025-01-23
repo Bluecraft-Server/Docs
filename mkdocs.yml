@@ -4,6 +4,12 @@
 
 site_name: Bluecraft-Docs
 theme:
+  palette:
+    # primary: indigo # 默认颜色
+    primary: blue # 主色
+    accent: light blue # 强调色
+    # 更多颜色请参考 https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+
   name: material
   #  favicon: attachment/portrait.png
   language: zh # 中文，解决中文搜索问题
