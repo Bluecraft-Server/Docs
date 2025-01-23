@@ -22,12 +22,12 @@ theme:
     - tabs 
 
 extra:
-  # 自定义页脚
-  footer: |
-    <div style="text-align: center;">
-      <p>由 <a href="https://www.bluecraft.top/">Bluecraft</a> 提供支持。</p>
-      <p><a href="https://qm.qq.com/q/BLdfQdDAl4">加入 QQ 群组</a></p>
-    </div>
+  social: # 自定义页脚 https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/
+    - link: https://qm.qq.com/q/BLdfQdDAl4
+      name: 加入 QQ 群组
+
+# 版权声明
+copyright: Copyright &copy; 2024 - 2025 Bluecraft
 
 markdown_extensions: 
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
