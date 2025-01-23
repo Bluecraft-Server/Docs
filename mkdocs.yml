@@ -22,8 +22,11 @@ theme:
     - tabs 
 
 extra:
-  generator: false # 去除 Made with Material for MkDocs
-  social: # 自定义页脚 https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/
+  # 去除 Made with Material for MkDocs
+  generator: false
+
+  # 自定义页脚 https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/
+  social:
     - icon: material/link
       link: https://qm.qq.com/q/BLdfQdDAl4
       name: 加入 QQ 群组
