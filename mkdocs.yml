@@ -2,7 +2,7 @@
 # mkdocs-material: https://squidfunk.github.io/mkdocs-material/
 # mkdocs: https://www.mkdocs.org/user-guide/configuration/
 
-site_name: Bluecraft-Docs
+site_name: 蔚蓝工艺官方文档
 theme:
   palette:
     # primary: indigo # 默认颜色
@@ -13,7 +13,7 @@ theme:
   logo: assets/Logo.png # 徽标
   favicon: assets/favicon.ico # 站点图标
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
-  
+
   name: material
   #  favicon: attachment/portrait.png
   language: zh # 中文，解决中文搜索问题
