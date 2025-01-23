@@ -1,0 +1,753 @@
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>简易 MEK 流程（从零到核电前） - 蔚蓝工艺官方文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.6a5ad368.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2094f3">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#简易-mek-流程从零到核电前" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="蔚蓝工艺官方文档" class="md-header-nav__button md-logo" aria-label="蔚蓝工艺官方文档">
+      
+  <img src="../assets/Logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            蔚蓝工艺官方文档
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              简易 MEK 流程（从零到核电前）
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link">
+        首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Bluecraft%20%E7%9B%B8%E5%85%B3%20Mod/" class="md-tabs__link">
+          Bluecraft 相关 Mod
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          MEK
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../%E8%A7%84%E5%88%99/Building-regulations/" class="md-tabs__link">
+          规则
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="蔚蓝工艺官方文档" class="md-nav__button md-logo" aria-label="蔚蓝工艺官方文档">
+      
+  <img src="../assets/Logo.png" alt="logo">
+
+    </a>
+    蔚蓝工艺官方文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Bluecraft 相关 Mod
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Bluecraft 相关 Mod" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Bluecraft 相关 Mod
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Bluecraft%20%E7%9B%B8%E5%85%B3%20Mod/" title="Bluecraft 相关 Mod" class="md-nav__link">
+      Bluecraft 相关 Mod
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      MEK
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="MEK" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        MEK
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        简易 MEK 流程（从零到核电前）
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="简易 MEK 流程（从零到核电前）" class="md-nav__link md-nav__link--active">
+      简易 MEK 流程（从零到核电前）
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-引言" class="md-nav__link">
+    1. 引言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-前期发电-1热力发电机进行热电转换" class="md-nav__link">
+    2. 前期发电 1——热力发电机进行热电转换
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-万物起源冶金灌注机" class="md-nav__link">
+    3. 万物起源——冶金灌注机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-一份能当八份用富集仓" class="md-nav__link">
+    4. 一份能当八份用——富集仓
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-前期发电-2擎天一线风力发电机" class="md-nav__link">
+    5. 前期发电 2——擎天一线，风力发电机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-升级你的机械工厂升级组件" class="md-nav__link">
+    6. 升级你的机械工厂——升级组件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mek-的-kami-们" class="md-nav__link">
+    7. MEK 的 Kami 们
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-中期发电食物转乙烯燃气发电机" class="md-nav__link">
+    8. 中期发电——食物转乙烯，燃气发电机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-掏空世界数字型采矿机" class="md-nav__link">
+    9. 掏空世界——数字型采矿机
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      规则
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="规则" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        规则
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E8%A7%84%E5%88%99/Building-regulations/" title="Bluecraft 服务器新存档规则制度" class="md-nav__link">
+      Bluecraft 服务器新存档规则制度
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E8%A7%84%E5%88%99/Management-System/" title="Bluecraft 服务器方面管理制度" class="md-nav__link">
+      Bluecraft 服务器方面管理制度
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E8%A7%84%E5%88%99/Server-Rule/" title="Bluecraft 服务器行为规范" class="md-nav__link">
+      Bluecraft 服务器行为规范
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-引言" class="md-nav__link">
+    1. 引言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-前期发电-1热力发电机进行热电转换" class="md-nav__link">
+    2. 前期发电 1——热力发电机进行热电转换
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-万物起源冶金灌注机" class="md-nav__link">
+    3. 万物起源——冶金灌注机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-一份能当八份用富集仓" class="md-nav__link">
+    4. 一份能当八份用——富集仓
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-前期发电-2擎天一线风力发电机" class="md-nav__link">
+    5. 前期发电 2——擎天一线，风力发电机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-升级你的机械工厂升级组件" class="md-nav__link">
+    6. 升级你的机械工厂——升级组件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mek-的-kami-们" class="md-nav__link">
+    7. MEK 的 Kami 们
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-中期发电食物转乙烯燃气发电机" class="md-nav__link">
+    8. 中期发电——食物转乙烯，燃气发电机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-掏空世界数字型采矿机" class="md-nav__link">
+    9. 掏空世界——数字型采矿机
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="简易-mek-流程从零到核电前">简易 MEK 流程（从零到核电前）<a class="headerlink" href="#简易-mek-流程从零到核电前" title="Permanent link">#</a></h1>
+<blockquote>
+<p>作者: 三途川之影 / 艾可希雅 | 编辑日期: 2024-08-06 00:00:00</p>
+</blockquote>
+<h2 id="1-引言">1. 引言<a class="headerlink" href="#1-引言" title="Permanent link">#</a></h2>
+<p>当你按照原版的生存方式，获得第一个铁镐的时候，就意味着你可以点开通用机械（简称 MEK）的科技树了。你会遇到贯彻整个模组流程最重要的矿物之一——锇（需要用铁镐挖掘），一种白色的矿石。</p>
+<p>使用你的合成表查询工具，可以发现你已经可以利用锇作出第一个生产机器——冶金灌注机。但在这之前，还有一些准备工作要做。</p>
+<p><img alt="锇矿石" src="Images/Index/%E9%94%87%E7%9F%BF%E7%9F%B3.png" /></p>
+<h2 id="2-前期发电-1热力发电机进行热电转换">2. 前期发电 1——热力发电机进行热电转换<a class="headerlink" href="#2-前期发电-1热力发电机进行热电转换" title="Permanent link">#</a></h2>
+<p>然而此时你的发电选项只有一个——热力发电机(沉浸工程跟交错道途也可以发电)，可以直接使用可燃物进行发电。而还有一套被动发电的原理是，当热力发电机任意一面有熔岩（无论是源头还是流动）时，会产生电力，但因为一个面需要接机器／电线，所以能利用的只有五个面。</p>
+<p>温知识：这个机器本身能含岩浆，所以实际上还可以 +1 面，但是一桶岩浆源换约 10 FE / Tick 的发电量，有点麻烦。</p>
+<p>下图为一桶岩浆利用发电机五个面进行被动发电的参考例子：</p>
+<p><img alt="热力发电机 - 演示1" src="Images/Index/%E7%83%AD%E5%8A%9B%E5%8F%91%E7%94%B5%E6%9C%BA-%E6%BC%94%E7%A4%BA1.png" /></p>
+<p><img alt="热力发电机 - 演示2" src="Images/Index/%E7%83%AD%E5%8A%9B%E5%8F%91%E7%94%B5%E6%9C%BA-%E6%BC%94%E7%A4%BA2.png" /></p>
+<h2 id="3-万物起源冶金灌注机">3. 万物起源——冶金灌注机<a class="headerlink" href="#3-万物起源冶金灌注机" title="Permanent link">#</a></h2>
+<p>有了电力之后，可以做出你在 MEK 中的第一个生产机器——冶金灌注机。恭喜你，解锁了 MEK 中的合金、控制电路的制作。</p>
+<blockquote>
+<p>注：以下一个单位指1个对应物品如碳产生的灌注用液体，富集后对应物品可产生8个单位的灌注用液体。</p>
+</blockquote>
+<p>钢锭：制作大部分 MEK 机械的必需品，在冶金灌注机中，铁锭加1个单位碳变成富集铁，富集铁加1个单位碳变成钢粉，烧炼后变为钢锭。</p>
+<p>前期建议先弄6个钢锭，2个用于制作电线，剩下4个用来搓下一个重要机械。</p>
+<p>合金：冶金灌注机中一个铁加1个单位的红石可获得最基础的合金，用于制作高级机器。当然利用冶金灌注机可以制作更高级的合金，这点请查询合成表。</p>
+<p>控制电路：最基础控制电路由一个锇锭加2个单位红石在冶金灌注机完成。和合金不同的是，它是由更高等级的合金在工作台升级的。</p>
+<p><img alt="灌注-1" src="Images/Index/%E7%81%8C%E6%B3%A8-1.png" /></p>
+<p><img alt="合成-控制电路" src="Images/Index/%E5%90%88%E6%88%90-%E6%8E%A7%E5%88%B6%E7%94%B5%E8%B7%AF.png" /></p>
+<h2 id="4-一份能当八份用富集仓">4. 一份能当八份用——富集仓<a class="headerlink" href="#4-一份能当八份用富集仓" title="Permanent link">#</a></h2>
+<p>你受够了冶金灌注机不断吞噬着你的红石和煤炭，于是你在合成表发现了一个新机器——富集仓。</p>
+<p>将红石和煤炭丢入富集仓进行处理后，得到了富集红石和富集煤，这两个玩意丢入冶金灌注机后可以得到 8 个单位的灌注用液体。</p>
+<p>此外另一个重要的功能是，它可以实现前期的矿石增产——粗矿为 3 产 4，原矿为 1 产 2。</p>
+<p>另外还有其它配方，例如可以富集沙砾变为燧石，关于这些，请查询合成表。</p>
+<p><img alt="富集-富集红石" src="Images/Index/%E5%AF%8C%E9%9B%86-%E5%AF%8C%E9%9B%86%E7%BA%A2%E7%9F%B3.png" /></p>
+<p><img alt="富集-富集燧石" src="Images/Index/%E5%AF%8C%E9%9B%86-%E5%AF%8C%E9%9B%86%E7%87%A7%E7%9F%B3.png" /></p>
+<h2 id="5-前期发电-2擎天一线风力发电机">5. 前期发电 2——擎天一线，风力发电机<a class="headerlink" href="#5-前期发电-2擎天一线风力发电机" title="Permanent link">#</a></h2>
+<p>你依照合成表，一步一步制作更高级的合金和控制电路，进而得到了更多的机械，而且使用了速度升级和能量升级来提升机械的工作效率，但电量已经跟不上了。查询合成表后，你找到了自己的下一个目标——风力发电机。</p>
+<p>风力发电机的发电效率与高度有关，但就算摆一台在地面上，它的发电效率都是一台被动发电的热力发电机不能比拟的。为了提高效率，你需要提升高度，并且使用电线将电导入下来。</p>
+<p>这里推荐搓4～6台，并且把高度提升到300格放置风力发电机，这个的发电量足够你过渡到中期甚至后期，不行再加就是了（doge）。</p>
+<p>线缆最低级的就行，或者提升到高级线缆，精英线缆就已经有些浪费了（虽说mek的能量线缆本质上是容量庞大的存储能量的装置）。</p>
+<p><img alt="风力发电机" src="Images/Index/%E9%A3%8E%E5%8A%9B%E5%8F%91%E7%94%B5%E6%9C%BA.png" /></p>
+<h2 id="6-升级你的机械工厂升级组件">6. 升级你的机械工厂——升级组件<a class="headerlink" href="#6-升级你的机械工厂升级组件" title="Permanent link">#</a></h2>
+<p>即使或已经将机械升级到高级的工厂，但缓慢的进度条成为了提高产能的阻碍，是时候从另一条赛道升级你的机械了。</p>
+<blockquote>
+<p>小技巧：可以手持升级组件 <code>Shift+鼠标右键</code> 直接安装在机器里。</p>
+<p>注意：当前版本 MEK 的最大堆叠不是以前的 8 个或 4 个。使用Shift+左键的快捷合成可能会合成过量的升级组件。</p>
+</blockquote>
+<p>能量升级：每个机械能装八个，装到八个的时候用电量是原来的十分之一，电量缓存也会翻十倍。为了你的电量健康，建议先做这个再考虑速度升级。</p>
+<p>速度升级：每个机械能装八个，装到八个的时候是十倍速处理(耗电会大大增加)，使用灌注合金、玻璃和锇粉合成。在安装一定量的速度升级后，进电的速度就会小于出电的速度，导致机械无法正常工作，因此建议先拉满上面的能量升级。</p>
+<p>降噪升级：没什么好说的，这东西护耳(然而你可以在沉浸工业中直接制作耳罩)。同样是能装八个，装完后就可以使机器完全静音。</p>
+<p>其它升级会在对应的机器进行讲解。</p>
+<p><img alt="升级-1" src="Images/Index/%E5%8D%87%E7%BA%A7-1.png" /></p>
+<p><img alt="升级-2" src="Images/Index/%E5%8D%87%E7%BA%A7-2.png" /></p>
+<h2 id="7-mek-的-kami-们">7. MEK 的 Kami 们<a class="headerlink" href="#7-mek-的-kami-们" title="Permanent link">#</a></h2>
+<p>想要获得轻松的游戏体验，尽快获得数值怪和机制怪是很有必要的。mek提供了十分强大的前期就可以制造的工具。</p>
+<p>自由助跑器：甚至只需要最低等级的合金和控制电路就可以制作的脚部装备，有电的情况下可以用电抵消摔落伤害，还可以自动翻越一格高的方块。</p>
+<p><img alt="成就-芜湖！信仰之跃！" src="Images/Index/%E6%88%90%E5%B0%B1-%E8%8A%9C%E6%B9%96%EF%BC%81%E4%BF%A1%E4%BB%B0%E4%B9%8B%E8%B7%83%EF%BC%81.png" /></p>
+<p>喷气背包：仍然是只需要最低级的控制电路就能制造的飞行工具，需要多造一个电解分离器产生氢气。</p>
+<p><img alt="电解分离器-喷气背包" src="Images/Index/%E7%94%B5%E8%A7%A3%E5%88%86%E7%A6%BB%E5%99%A8-%E5%96%B7%E6%B0%94%E8%83%8C%E5%8C%85.png" /></p>
+<blockquote>
+<p>注：以上两个工具有对应的切换模式的按键，但建议改一下。</p>
+<p>而且上述两个工具在获得下界合金锭后可以进行升级，获得对应部位下界合金防御力（甚至不需要升级模板）。</p>
+</blockquote>
+<p>原子分解机：真正的 kami。对无护甲目标高达 21 点的伤害（秒杀苦力怕和无护甲的骷髅），最高档的挖掘速度已经是前期通用机械提供的挖掘速度的极限。如此强大，只需要一个原子合金（最高级的合金）和一个强化黑曜石锭（使用锇压缩机制作）。</p>
+<p><img alt="原子分解机" src="Images/Index/%E5%8E%9F%E5%AD%90%E5%88%86%E8%A7%A3%E6%9C%BA.png" /></p>
+<p>数字型采矿机：这位更是机制怪。然而比起前面几位，这个要贵的多——总计7个原子合金和2个强化黑曜石锭。但可以让你永久摆脱下矿这一工作。采矿机速度慢,要装升级模块.为了被矿我们还需要打开精准采集，这样一来耗电量大大上升了,至少你的产电要2k fe/t以上(包含了被矿产线).</p>
+<p><img alt="数字型采矿机" src="Images/Index/%E6%95%B0%E5%AD%97%E5%9E%8B%E9%87%87%E7%9F%BF%E6%9C%BA.png" /></p>
+<h2 id="8-中期发电食物转乙烯燃气发电机">8. 中期发电——食物转乙烯，燃气发电机<a class="headerlink" href="#8-中期发电食物转乙烯燃气发电机" title="Permanent link">#</a></h2>
+<p>虽说风力发电机是强大而且纯白嫖的电力，但在对产能的追求中，你不能再忍受哪怕一次停电。</p>
+<p>你偶然从机佬的口中得知了燃气发电的强大，开始向往产生一种粉紫色的气体并且用其产生源源不断的电力。</p>
+<p>在完成了一个农场（或者园艺玻璃罩）后，你决定正式使用乙烯驱动燃气发电机。</p>
+<p>生产乙烯的机器为加压反应室。</p>
+<p>推荐使用西瓜产生生物燃料——在使用精密锯木机后可以得到西瓜片，然后经过粉碎机粉碎后获得更多的生物燃料。当然也可以使用其它的食物，直接粉碎就可以获得生物燃料。</p>
+<p><img alt="图片 12" src="Images/Index/%E5%9B%BE%E7%89%8712.png" /></p>
+<p><img alt="图片 13" src="Images/Index/%E5%9B%BE%E7%89%8713.png" /></p>
+<p>水源使用水槽，配合机械管道抽水，加入到电解分离器</p>
+<p><img alt="图片 14" src="Images/Index/%E5%9B%BE%E7%89%8714.png" /></p>
+<p>电解分离器产生氢气，可以和加压反应室共用水源。</p>
+<p><img alt="图片 15" src="Images/Index/%E5%9B%BE%E7%89%8715.png" /></p>
+<p><img alt="图片 16" src="Images/Index/%E5%9B%BE%E7%89%8716.png" /></p>
+<p>氢气和水到位后，投入生物燃料即可产出乙烯（气体），产生的基片需要另外收集。</p>
+<p><img alt="图片 17" src="Images/Index/%E5%9B%BE%E7%89%8717.png" /></p>
+<p>然后通过加压管道将乙烯输入燃气发电机进行发电。</p>
+<p><img alt="图片 18" src="Images/Index/%E5%9B%BE%E7%89%8718.png" /></p>
+<p>导出电力，可以重新用于发电系统中的其它机器。不要忘记放上能量立方进行存电。</p>
+<p><img alt="图片 19" src="Images/Index/%E5%9B%BE%E7%89%8719.png" /></p>
+<h2 id="9-掏空世界数字型采矿机">9. 掏空世界——数字型采矿机<a class="headerlink" href="#9-掏空世界数字型采矿机" title="Permanent link">#</a></h2>
+<p>经过升级机器和其它模组的霍霍后，你的资源已经快见底了，但是你不想再去矿洞去感受Creeper？了。所以，你想起来机佬们都爱用的数字型采矿机。</p>
+<p>事实上，数字型采矿机不止能挖掘矿石，其它方块也可以。</p>
+<p>采矿机上的绿色孔为能量输入，黄色孔为物品输出（需要打开物品弹出才能自动输出物品）</p>
+<p><img alt="数字型采矿机" src="Images/Index/%E6%95%B0%E5%AD%97%E5%9E%8B%E9%87%87%E7%9F%BF%E6%9C%BA.png" /></p>
+<p>直接右键数字型采矿机打开的 GUI，左侧第一个为自动弹出，打开后可以自动输出内部缓存区中的物品到与黄色孔连接的容器里；中间的别管；右侧的为精准采集模式（耗电量是原来的6倍）。</p>
+<p><img alt="图片 20" src="Images/Index/%E5%9B%BE%E7%89%8720.png" /></p>
+<p>点击配置按钮后，出现 MEK 的物品过滤器，下面将以采集所有矿石和只采集铁矿为例子进行讲解。具体用法可以参考 <a href="https://www.mcmod.cn/item/447465.html">https://www.mcmod.cn/item/447465.html</a></p>
+<p>采集所有矿石：当然不可能将所有矿石一个一个标记上，所以要利用到物品标签，将所有带『矿物』标签的全部方块加入过滤器中。</p>
+<p>具体方法：新过滤器→标签→输入forge:ores/*（严格区分大小写）→保存，成功添加所有带有forge:ores标签的方块。</p>
+<p><img alt="图片 21" src="Images/Index/%E5%9B%BE%E7%89%8721.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Bluecraft%20%E7%9B%B8%E5%85%B3%20Mod/" title="Bluecraft 相关 Mod" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                Bluecraft 相关 Mod
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../%E8%A7%84%E5%88%99/Building-regulations/" title="Bluecraft 服务器新存档规则制度" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                Bluecraft 服务器新存档规则制度
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2024 - 2025 Bluecraft
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://qm.qq.com/q/BLdfQdDAl4" target="_blank" rel="noopener" title="加入 QQ 群组" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 00-5 5 5 5 0 005 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 005-5 5 5 0 00-5-5z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ["navigation.expand", "tabs"],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

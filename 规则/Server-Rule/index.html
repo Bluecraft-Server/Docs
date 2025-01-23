@@ -1,0 +1,803 @@
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Bluecraft 服务器行为规范 - 蔚蓝工艺官方文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.6a5ad368.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2094f3">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bluecraft-服务器行为规范" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="蔚蓝工艺官方文档" class="md-header-nav__button md-logo" aria-label="蔚蓝工艺官方文档">
+      
+  <img src="../../assets/Logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            蔚蓝工艺官方文档
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Bluecraft 服务器行为规范
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Bluecraft%20%E7%9B%B8%E5%85%B3%20Mod/" class="md-tabs__link">
+          Bluecraft 相关 Mod
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../MEK/" class="md-tabs__link">
+          MEK
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Building-regulations/" class="md-tabs__link md-tabs__link--active">
+          规则
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="蔚蓝工艺官方文档" class="md-nav__button md-logo" aria-label="蔚蓝工艺官方文档">
+      
+  <img src="../../assets/Logo.png" alt="logo">
+
+    </a>
+    蔚蓝工艺官方文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Bluecraft 相关 Mod
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Bluecraft 相关 Mod" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Bluecraft 相关 Mod
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Bluecraft%20%E7%9B%B8%E5%85%B3%20Mod/" title="Bluecraft 相关 Mod" class="md-nav__link">
+      Bluecraft 相关 Mod
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      MEK
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="MEK" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        MEK
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MEK/" title="简易 MEK 流程（从零到核电前）" class="md-nav__link">
+      简易 MEK 流程（从零到核电前）
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      规则
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="规则" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        规则
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Building-regulations/" title="Bluecraft 服务器新存档规则制度" class="md-nav__link">
+      Bluecraft 服务器新存档规则制度
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Management-System/" title="Bluecraft 服务器方面管理制度" class="md-nav__link">
+      Bluecraft 服务器方面管理制度
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Bluecraft 服务器行为规范
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Bluecraft 服务器行为规范" class="md-nav__link md-nav__link--active">
+      Bluecraft 服务器行为规范
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#群聊规则" class="md-nav__link">
+    群聊规则
+  </a>
+  
+    <nav class="md-nav" aria-label="群聊规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#权力与限制" class="md-nav__link">
+    权力与限制
+  </a>
+  
+    <nav class="md-nav" aria-label="权力与限制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#权力" class="md-nav__link">
+    权力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#限制" class="md-nav__link">
+    限制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#处罚" class="md-nav__link">
+    处罚
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#您需要遵守的其他规则" class="md-nav__link">
+    您需要遵守的其他规则
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluecraft-minecraft-服务器规则" class="md-nav__link">
+    Bluecraft Minecraft 服务器规则
+  </a>
+  
+    <nav class="md-nav" aria-label="Bluecraft Minecraft 服务器规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#对于管理员" class="md-nav__link">
+    对于管理员
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#解释" class="md-nav__link">
+    解释
+  </a>
+  
+    <nav class="md-nav" aria-label="解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#什么是-私人方块" class="md-nav__link">
+    什么是 私人方块？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#什么是-言论" class="md-nav__link">
+    什么是 言论？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#其他" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#群聊规则" class="md-nav__link">
+    群聊规则
+  </a>
+  
+    <nav class="md-nav" aria-label="群聊规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#权力与限制" class="md-nav__link">
+    权力与限制
+  </a>
+  
+    <nav class="md-nav" aria-label="权力与限制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#权力" class="md-nav__link">
+    权力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#限制" class="md-nav__link">
+    限制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#处罚" class="md-nav__link">
+    处罚
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#您需要遵守的其他规则" class="md-nav__link">
+    您需要遵守的其他规则
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluecraft-minecraft-服务器规则" class="md-nav__link">
+    Bluecraft Minecraft 服务器规则
+  </a>
+  
+    <nav class="md-nav" aria-label="Bluecraft Minecraft 服务器规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#对于管理员" class="md-nav__link">
+    对于管理员
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#解释" class="md-nav__link">
+    解释
+  </a>
+  
+    <nav class="md-nav" aria-label="解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#什么是-私人方块" class="md-nav__link">
+    什么是 私人方块？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#什么是-言论" class="md-nav__link">
+    什么是 言论？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#其他" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="bluecraft-服务器行为规范">Bluecraft 服务器行为规范<a class="headerlink" href="#bluecraft-服务器行为规范" title="Permanent link">#</a></h1>
+<blockquote>
+<p>作者: KFACBT、羁绊姐姐、划越、Misaka19090CN | 编辑日期: 2024-08-08 23:27</p>
+</blockquote>
+<p>为了维护服务器环境 / 群聊环境，您必须阅读并遵守以下《<strong>Bluecraft 服务器行为规范</strong>》。</p>
+<blockquote>
+<p><strong>Bluecraft 服务器交流群</strong> 和 <strong>Bluecraft Minecraft 服务器</strong> 区域以内，是此文档的适用范围。</p>
+</blockquote>
+<h2 id="群聊规则">群聊规则<a class="headerlink" href="#群聊规则" title="Permanent link">#</a></h2>
+<h3 id="权力与限制">权力与限制<a class="headerlink" href="#权力与限制" title="Permanent link">#</a></h3>
+<h4 id="权力">权力<a class="headerlink" href="#权力" title="Permanent link">#</a></h4>
+<ul>
+<li>在群聊内正常交流、讨论</li>
+<li>使用群聊内的功能</li>
+</ul>
+<h4 id="限制">限制<a class="headerlink" href="#限制" title="Permanent link">#</a></h4>
+<blockquote>
+<p>您不得在群聊内发布以下举例的言论，否则您将会受到群聊管理员的处罚，参考 <strong>权力与限制 -&gt; 处罚</strong> 部分。</p>
+</blockquote>
+<ul>
+<li>发布政治敏感、尚且有争议的政治正确言论</li>
+<li>发布色情低俗言论</li>
+<li>发布血腥暴力言论</li>
+<li>发布过多人身攻击、带有针对某对象侮辱性言论</li>
+<li>发布与本群聊无关、戾气重的争议性言论</li>
+<li>发布短时间内大量干扰性、无意义、抽象言论</li>
+<li>发布包含直接或间接以宣传方式利益为主的广告言论</li>
+<li>发布关于直接或间接获取个人信息言论 (<strong>有关任何以非法途径获取他人个人信息的言论</strong>)</li>
+<li>发布会影响 QQ 运行的信息，即使事先声明过</li>
+</ul>
+<blockquote>
+<p>我们不排斥 LGBT 人群，但不允许在群聊内讨论这类话题。</p>
+<p>请不要转发包含尚存争议、未经证实的消息。</p>
+</blockquote>
+<h4 id="处罚">处罚<a class="headerlink" href="#处罚" title="Permanent link">#</a></h4>
+<blockquote>
+<p>如果您在群聊内发布了 <strong>权力与限制 -&gt; 限制</strong> 举例的言论，管理员将采取以下措施进行处罚。</p>
+</blockquote>
+<ul>
+<li>禁言（时间不限）</li>
+<li>从群聊中移除相关用户</li>
+</ul>
+<h4 id="您需要遵守的其他规则">您需要遵守的其他规则<a class="headerlink" href="#您需要遵守的其他规则" title="Permanent link">#</a></h4>
+<ul>
+<li>若您需要向他人求助，请友善发言，任何人无义务帮助他人。</li>
+</ul>
+<h2 id="bluecraft-minecraft-服务器规则">Bluecraft Minecraft 服务器规则<a class="headerlink" href="#bluecraft-minecraft-服务器规则" title="Permanent link">#</a></h2>
+<h3 id="对于管理员">对于管理员<a class="headerlink" href="#对于管理员" title="Permanent link">#</a></h3>
+<ol>
+<li>管理员不得在服务器内私自干扰正常玩家游玩，需要正常玩家帮忙，请沟通好玩家才行，而不是直接把人 TP 过来</li>
+<li>管理员不得在服务器内随意放置 <strong>私人方块</strong>（除非是自己家）</li>
+<li>管理员不得随意使用隐身药水、隐身效果、指令等</li>
+<li>管理员在服务器内，不能私自去动正常玩家的物品、装置（也不能去调参数）</li>
+</ol>
+<p>以上规则如未能履行或违反以上规则，则移出管理层。</p>
+<h2 id="解释">解释<a class="headerlink" href="#解释" title="Permanent link">#</a></h2>
+<h3 id="什么是-私人方块">什么是 <code>私人方块</code>？<a class="headerlink" href="#什么是-私人方块" title="Permanent link">#</a></h3>
+<p>普通玩家无法破坏，只有管理员可破坏的方块，均可被定义为 <strong>私人方块</strong>。</p>
+<h3 id="什么是-言论">什么是 <code>言论</code>？<a class="headerlink" href="#什么是-言论" title="Permanent link">#</a></h3>
+<p>包括但不限于：</p>
+<ul>
+<li>文字</li>
+<li>图片</li>
+<li>视频</li>
+<li>转发的消息，内容</li>
+</ul>
+<h3 id="其他">其他<a class="headerlink" href="#其他" title="Permanent link">#</a></h3>
+<p>一切解释权归 Bluecraft 群主、群聊管理员所有。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Management-System/" title="Bluecraft 服务器方面管理制度" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                Bluecraft 服务器方面管理制度
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2024 - 2025 Bluecraft
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://qm.qq.com/q/BLdfQdDAl4" target="_blank" rel="noopener" title="加入 QQ 群组" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 00-5 5 5 5 0 005 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 005-5 5 5 0 00-5-5z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["navigation.expand", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
